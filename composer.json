@@ -1,0 +1,60 @@
+{
+    "name": "yjballestero/yii2-firmafy",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "homepage": "https://github.com/yjballestero/yii2-firmafy.git",
+    "description": "Firmafy Adapter for Yii2",
+    "keywords": [
+        "yii2",
+        "firmafy",
+        "mail",
+        "api"
+    ],
+    "authors": [
+        {
+            "name": "YJ Ballestero",
+            "email": "yjballestero@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/yjballestero/yii2-firmafy.git"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "yjballestero\\firmafy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "yjballestero\\tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "firebase/php-jwt": "^6.8",
+        "yiisoft/yii2": "~2.0.39"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "^7.5.20 || ^8.5.30 || ^9.5.25"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "apcu-autoloader": true,
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    }
+}
